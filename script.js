@@ -28,11 +28,11 @@ errorButton.addEventListener('click', () => {
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-      if(button.textContent === 'SÍ'){
+      if(button.textContent === 'Si'){  // Cambiar 'SÍ' a 'Si'
           updateDisplay(ohyes);
           buttons.forEach(btn => btn.style.display = 'none');
       }
-      if (button.textContent === 'NO'){
+      if (button.textContent === 'No'){  // Cambiar 'NO' a 'No'
           count++;
           if(count < alternatives.length){
               updateDisplay(alternatives[count]);
